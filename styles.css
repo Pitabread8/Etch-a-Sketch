@@ -1,0 +1,57 @@
+html {
+    height: 100%;
+    background-image: linear-gradient(360deg, #9E101C, #C21F48, #FFBC42);
+}
+
+body {
+    margin: 0;
+}
+
+#grid {
+    margin: 0 auto;
+    display: grid;
+    outline: solid 5px #FFBC42;
+    box-shadow: 0 0 30px #9E101C;
+    width: 500px;
+    height: 500px;
+}
+
+.grid-item {
+    outline: solid 2px #9E101C;
+}
+
+#btns1, #btns2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+button {
+    width: auto;
+    height: auto;
+    font-family: "Sofia";
+    font-size: large;
+    margin: 10px;
+    padding: 10px;
+    background-color: transparent;
+    color: #FFF;
+    outline: none;
+    border: solid 3px #FFF;
+    border-radius: 75%;
+    box-shadow: 0 0 10px #FFF, 0 0 10px #FFF inset;
+}
+
+button:hover {
+    box-shadow: 0 0 30px #FFBC42, 0 0 2px #FFBC42;
+}
+
+#color-picker {
+    margin: 10px;
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    border: solid 3px #FFF;
+    border-radius: 75%;
+    box-shadow: 0 0 10px #FFF, 0 0 10px #FFF inset;
+}

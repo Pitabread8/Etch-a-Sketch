@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Page Title</title>
+	  <meta charset="UTF-8"/>
+	  <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+      <script src="script.js"></script>
+	</head>
+	<body>
+        <div id="grid">
+            <script>createDiv(16);</script>
+            <script>divHover();</script>
+        </div>
+        <div id="btns1">
+            <button onclick="createDiv(8)">8 x 8</button>
+            <button onclick="createDiv(16)">16 x 16</button>
+            <button onclick="createDiv(24)">24 x 24</button>
+            <button onclick="createDiv(32)">32 x 32</button>
+        </div>
+        <div id="btns1">
+            <button onclick="clearDiv()">Reset</button>
+            <button onclick="colorBlack()">Black</button>
+            <input id="color-picker" type="color" value="#000000">
+            <button onclick="colorTransparent()">Transparent</button>
+            <button onclick="colorRainbow()">Rainbow</button>
+            <button onclick="erase(32)">Erase</button>
+        </div>
+	</body>
+</html>
