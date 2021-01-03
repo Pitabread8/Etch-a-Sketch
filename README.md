@@ -1,4 +1,9 @@
 # Etch-a-Sketch
 
 To-Do:  
-Create functions for alternative inks
+- Add gridline checkbox  
+- Make vertical menus  
+- Style checkboxes  
+- Add Etch-A-Sketch border?  
+- Center sketchboard?  
+- Add mobile version?

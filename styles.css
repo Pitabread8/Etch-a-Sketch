@@ -5,6 +5,8 @@ html {
 
 body {
     margin: 0;
+    font-family: "Sofia";
+    color: #FFF;
 }
 
 #grid {
@@ -16,11 +18,7 @@ body {
     height: 500px;
 }
 
-.grid-item {
-    outline: solid 2px #9E101C;
-}
-
-#btns1, #btns2 {
+#btns1, #btns2, #btns3 {
     display: flex;
     align-items: center;
     justify-content: center;

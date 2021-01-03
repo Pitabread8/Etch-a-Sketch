@@ -9,18 +9,42 @@ function createDiv(num) {
         grid.style.gridTemplateColumns = `repeat(${num}, 1fr)`;
     }
     clearDiv();
-    const list = document.getElementsByClassName('grid-item');
-    divHover(list);
+    checkEnhancement();
 }
 
-function divHover(items) {
+function checkEnhancement() {
+    if (document.getElementById("enhancement").checked === true) {
+        let divs = document.getElementsByClassName("grid-item");
+        for (i = 0; i < divs.length; i++) {
+            divs[i].style.boxShadow = "0 0 15px #FFF";
+        }
+    }
+
+    else if (document.getElementById("enhancement").checked === false) {
+        removeEnhancement();
+    }
+}
+
+function removeEnhancement() {
+    let divs = document.getElementsByClassName("grid-item");
+        for (i = 0; i < divs.length; i++) {
+            divs[i].style.boxShadow = "none";
+        }
+}
+
+function divHover(option) {
+    const items = document.getElementsByClassName('grid-item');
     for (i = 0; i < items.length; i++) {
         let div = items[i];
-        div.addEventListener('mouseenter', () => {
-            div.style.boxShadow = "0 0 15px #FFF";
-            div.style.backgroundColor = document.getElementById("color-picker").value;
+        div.addEventListener('mouseover', () => {
+            if (option === "color") {div.style.backgroundColor = document.getElementById("color-picker").value;}
+            else if (option === "black") {div.style.backgroundColor = "#000";}
+            else if (option === "transparent") {div.style.backgroundColor = "transparent";}
+            else if (option === "warm") {div.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 70%)`;}
+            else if (option === "cool") { div.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 30%)`;}
+            else if (option === "erase") {div.style.backgroundColor = "#FFF";}
         });
-    };
+    }; 
 }
 
 function clearDiv() {
@@ -28,6 +52,5 @@ function clearDiv() {
     for (i = 0; i < items.length; i++) {
         let div = items[i];
         div.style.backgroundColor = "#FFF";
-        div.style.boxShadow = "none";
     };
 }
