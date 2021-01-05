@@ -10,6 +10,28 @@ function createDiv(num) {
     }
     clearDiv();
     checkEnhancement();
+    checkGridlines();
+}
+
+function checkGridlines() {
+    if (document.getElementById("gridlines").checked === true) {
+        let divs = document.getElementsByClassName("grid-item");
+        for (i = 0; i < divs.length; i++) {
+            divs[i].style.boxShadow = "inset 0px 0px 0px 2px #9E101C";
+            divs[i].style.boxSizing = "border-box";
+        }
+    }
+
+    else if (document.getElementById("gridlines").checked === false) {
+        removeGridlines();
+    }
+}
+
+function removeGridlines() {
+    let divs = document.getElementsByClassName("grid-item");
+        for (i = 0; i < divs.length; i++) {
+            divs[i].style.boxShadow = "none";
+        }
 }
 
 function checkEnhancement() {
