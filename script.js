@@ -38,7 +38,7 @@ function checkEnhancement() {
     if (document.getElementById("enhancement").checked === true) {
         let divs = document.getElementsByClassName("grid-item");
         for (i = 0; i < divs.length; i++) {
-            divs[i].style.boxShadow = "0 0 15px #FFF";
+            divs[i].style.boxShadow = "0 0 15px 0 #FFF";
         }
     }
 

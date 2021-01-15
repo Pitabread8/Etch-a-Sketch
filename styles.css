@@ -18,8 +18,20 @@ body {
     height: 500px;
 }
 
+/* #grid, #btns1, #btns2, #btns3 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+/* #btns1 {left: 30vw;}
+#btns2 {left: 70vw;}
+#btns3 {top: 90vh;} */
+
 #btns1, #btns2, #btns3 {
     display: flex;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     margin: 10px;

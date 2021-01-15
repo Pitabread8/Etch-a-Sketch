@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	  <title>Play Etch-A-Sketch Online!</title>
-	  <meta charset="UTF-8"/>
-	  <link rel="stylesheet" href="styles.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-      <script src="script.js"></script>
-	</head>
-	<body>
-        <div id="grid">
-            <script>createDiv(16);</script>
-        </div>
-        <div id="btns1">
-            <button onclick="createDiv(8)">8 x 8</button>
-            <button onclick="createDiv(16)">16 x 16</button>
-            <button onclick="createDiv(24)">24 x 24</button>
-            <button onclick="createDiv(32)">32 x 32</button>
-        </div>
-        <div id="btns2">
-            <button id="black" onclick="divHover('black')">Black</button>
-            <input id="color-picker" type="color" value="#123456" onclick="divHover('color')">
-            <button onclick="divHover('transparent')">Transparent</button>
-            <button onclick="divHover('warm')">Warm Colors</button>
-            <button onclick="divHover('cool')">Cool Colors</button>
-            <button onclick="divHover('erase')">Erase</button>
-            <button onclick="clearDiv()">Reset</button>
-        </div>
-        <div id="btns3">
-            <form>
-                <label><input type="checkbox" id="enhancement" onclick="checkEnhancement()">Enhancement</label>
-                <label><input type="checkbox" id="gridlines" onclick="checkGridlines()">Gridlines</label>
-            </form>
-        </div>
-	</body>
+  <head>
+    <title>Play Etch-A-Sketch Online!</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="grid">
+      <script>createDiv(16);</script>
+    </div>
+    <div id="btns1">
+      <button onclick="createDiv(8)">8 x 8</button>
+      <button onclick="createDiv(16)">16 x 16</button>
+      <button onclick="createDiv(24)">24 x 24</button>
+      <button onclick="createDiv(32)">32 x 32</button>
+    </div>
+    <div id="btns2">
+      <button id="black" onclick="divHover('black')">Black</button>
+      <input id="color-picker" type="color" value="#123456" onclick="divHover('color')">
+      <button onclick="divHover('transparent')">Transparent</button>
+      <button onclick="divHover('warm')">Warm Colors</button>
+      <button onclick="divHover('cool')">Cool Colors</button>
+      <button onclick="divHover('erase')">Erase</button>
+      <button onclick="clearDiv()">Reset</button>
+    </div>
+    <div id="btns3">
+      <form>
+        <label><input type="radio" id="enhancement" name="option" onclick="checkEnhancement()">Enhancement</label>
+        <label><input type="radio" id="gridlines" name="option" onclick="checkGridlines()">Gridlines</label>
+      </form>
+    </div>
+  </body>
 </html>
