@@ -31,8 +31,9 @@
     </div>
     <div id="btns3">
       <form>
-        <label><input type="radio" id="none" name="option" onclick="addNone()" checked>No Effect</label>
-        <label><input type="radio" id="gridlines" name="option" onclick="addGridlines()">Gridlines</label>
+        <label><input type="radio" id="none" name="option" onclick="addNone()">No Effect</label>
+        <label><input type="radio" id="gridlines" name="option" onclick="addGridlines()" checked>Gridlines</label>
+        <script>addGridlines();</script>
         <label><input type="radio" id="enhancement" name="option" onclick="addEnhancement()">Enhancement</label>
       </form>
     </div>

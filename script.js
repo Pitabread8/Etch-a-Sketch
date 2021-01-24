@@ -1,6 +1,6 @@
 // To-Do:  Change background? Mobile version?
 
-let tool = null;
+let tool = "black";
 
 function createDiv(num) {
     let newnum = Math.pow(num, 2);
@@ -13,9 +13,9 @@ function createDiv(num) {
         grid.style.gridTemplateColumns = `repeat(${num}, 1fr)`;
     }
     clearDiv();
+    divHover(tool);
     addGridlines();
     addEnhancement();
-    divHover(tool);
 }
 
 function addNone() {
@@ -45,6 +45,7 @@ function addEnhancement() {
 }
 
 function divHover(option) {
+    console.log(option);
     const items = document.getElementsByClassName('grid-item');
     for (i = 0; i < items.length; i++) {
         let div = items[i];
